@@ -93,7 +93,7 @@ func WSListener2(ln net.Listener, options *WSOptions) (Listener, error) {
 	mux := http.NewServeMux()
 	mux.Handle(path, http.HandlerFunc(l.upgrade))
 	l.srv = &http.Server{
-		Addr:              ":18000",
+		Addr:              ":8080",
 		Handler:           mux,
 		ReadHeaderTimeout: 30 * time.Second,
 	}
