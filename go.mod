@@ -1,4 +1,4 @@
-module github.com/ginuerzh/gost
+module github.com/wznpp1/gost2
 
 go 1.20
 
